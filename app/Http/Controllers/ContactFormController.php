@@ -40,9 +40,8 @@ class ContactFormController extends Controller
         
         $contact->save();
         $data['filename'] = $fileName;
-        //Descomentar para enviar o email
-        //alterar no arquivo de configuração .env seuemail@gmail.com 
-        #Mail::to($data['email'])->send(new \App\Mail\FormContact($data));
+        
+        Mail::to($data['email'])->send(new \App\Mail\FormContact($data));
 
         return response()->json(null, 200);
     }

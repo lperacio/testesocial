@@ -28,7 +28,7 @@ class FormContact extends Mailable
      */
     public function build()
     {
-        return $this->from('seuemail@gmail.com')
+        return $this->from(env('MAIL_FROM_ADDRESS'))
         ->subject('DADOS DO FORMULÁRIO DE CONTATO')
         ->view('emails.mailFormContact');
     }
