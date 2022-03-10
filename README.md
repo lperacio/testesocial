@@ -1,16 +1,19 @@
-## HOW TO DEPLOY
+
+    ## HOW TO DEPLOY
+   
+        
     
-   * Clone the project
-   * git clone https://github.com/lperacio/testesocial.git
+    * Clone the project
+        git clone https://github.com/lperacio/testesocial.git
     
-   * Go to inside directory of project
-     cd testesocial 
-     
-   * Install all dependencies
+    * Go to inside directory of project  
+         cd testesocial
+    
+    * Install all dependencies
         composer install
         npm install
         npm run dev
-    
+        
     * Copy file .env
         cp .env.example .env
     
